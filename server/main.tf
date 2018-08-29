@@ -16,11 +16,7 @@ resource "aws_instance" "web" {
   provisioner "remote-exec" {
     inline = [
       "chmod +x /tmp/asset/setup-web.sh",
-<<<<<<< HEAD
       "sudo /tmp/asset/setup-web.sh",
-=======
-      "sudo /tmp/asset/setup-web.sh args",
->>>>>>> c19ed65743555521629c8e7505e91170a226bb0c
     ]
   }
 }
